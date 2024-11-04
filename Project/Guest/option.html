@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Role</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #f0f0f5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          text-align: center;
+          color: #333;
+      }
+
+      .container {
+          background-color: #fff;
+          padding: 40px 20px;
+          border-radius: 12px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+          max-width: 400px;
+          width: 90%;
+      }
+
+      h1 {
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 30px;
+          color: #333;
+      }
+
+      .button-group {
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+      }
+
+      .button {
+          text-decoration: none;
+          padding: 15px 25px;
+          font-size: 18px;
+          font-weight: 600;
+          border-radius: 8px;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+          color: #fff;
+          width: 120px;
+          display: inline-block;
+          text-align: center;
+      }
+
+      .button-coach {
+          background-color: #ff6b6b;
+      }
+
+      .button-student {
+          background-color: #4dabf7;
+      }
+
+      .button:hover {
+          transform: translateY(-5px);
+      }
+
+      .button-coach:hover {
+          background-color: #ff4b4b;
+      }
+
+      .button-student:hover {
+          background-color: #3b9ee8;
+      }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Select Your Role</h1>
+    <div class="button-group">
+        <a href="Coach.php" class="button button-coach">Coach</a>
+        <a href="Student.php" class="button button-student">Student</a>
+    </div>
+</div>
+
+</body>
+</html>
