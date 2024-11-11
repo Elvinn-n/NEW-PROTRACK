@@ -99,14 +99,17 @@ if(isset($_POST["submit"]))
   <br><br><br>
   <?php
     
-    $f="";
-    $SESSION['view']="";
+    $status=0;      // Message status read or unread
     
     if(isset($_POST["messages"]))
     {
       $i=1;
-      $f="read";
-      $_SESSION['view']=$f;
+      $status=1;
+
+      $updqry="update tbl_dailyreport set dailyreport_review_status='".$status."' where student_id='".$sid."'";
+      $con->query($updqry);
+      
+      
 
       $selqry="select tbl_dailyreport.*, tbl_coach.coach_name from tbl_dailyreport INNER JOIN tbl_coach ON tbl_dailyreport.coach_id=tbl_coach.coach_id where dailyreport_review IS NOT NULL AND dailyreport_review <> '' AND student_id='".$sid."'";
       $result = $con->query($selqry);
@@ -129,18 +132,10 @@ if(isset($_POST["submit"]))
         </tr>
 
       </table>
-
-  <?php
+<?php
     }
-    else
-    {
-      $f="unread";
-      $_SESSION['view']=$f;
-
-    }
-
-
   ?>
+  
   
 </body>
 </html>
