@@ -23,7 +23,7 @@
       </tr>
 
       <tr>
-        <td  height="51">Name</td>
+        <td  height="51">UserName</td>
         <td width="215" ><?php echo $data['coach_name'] ?> </td>
       </tr>
       <tr>
