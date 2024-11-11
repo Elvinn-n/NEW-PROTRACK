@@ -125,13 +125,21 @@
     <?php
 
         $cname=$_SESSION['cname'];
-        $f=$_SESSION['view'];
+       
         $i=1;
 
         $viewqry="select tbl_dailyreport.*, tbl_student.student_name from tbl_dailyreport INNER JOIN tbl_student ON tbl_dailyreport.student_id=tbl_student.student_id where tbl_dailyreport.student_id = " . $sid . " AND dailyreport_review IS NOT NULL";
         $view=$con->query($viewqry);
         while($rows = $view->fetch_assoc()) {
-            echo "<tr> <td>" . $i++ . "</td><td>" . $cname . "</td><td>" . $rows['student_name'] . "</td><td>" . $rows['dailyreport_date'] . "</td><td>" . $rows['dailyreport_review'] . "</td><td>" . $f . "</td> </tr>";
+            if($rows['dailyreport_review_status']=='1'){
+                $s="Read";
+            }else{
+                $s="Unread";
+            }
+            
+            
+
+            echo "<tr> <td>" . $i++ . "</td><td>" . $cname . "</td><td>" . $rows['student_name'] . "</td><td>" . $rows['dailyreport_date'] . "</td><td>" . $rows['dailyreport_review'] . "</td><td>" . $s. "</td> </tr>";
         }
     ?>
 </table>

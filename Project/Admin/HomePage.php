@@ -1,5 +1,6 @@
 <?php
-	session_start();
+  ob_start();
+  include("Head.php");
 	include("../Assets/Connection/Connection.php");
 	$selQuery="select * from tbl_admin where admin_id='".$_SESSION['aid']."'";
 	$result=$con->query($selQuery);
@@ -9,10 +10,7 @@
 
 
 
-<?php
-ob_start();
-include("Head.php");
-?>
+
             
             <h1 align="center">WELCOME </h1>
             <h1 align="center"><?php echo $data['admin_name'] ?></h1>

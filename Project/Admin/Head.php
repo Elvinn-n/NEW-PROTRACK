@@ -86,10 +86,10 @@
                     <a href="AddGame.php"><span class="icon edit" aria-hidden="true"></span>Add Game</a>
                   </li>
                   <li>
-                    <a href="StudentVerification.php"><span class="icon edit" aria-hidden="true"></span>Add Position</a>
+                    <a href="Positions.php"><span class="icon edit" aria-hidden="true"></span>Add Position</a>
                   </li>
                   <li>
-                    <a href="StudentVerification.php"><span class="icon edit" aria-hidden="true"></span>Add Action</a>
+                    <a href="Action.php"><span class="icon edit" aria-hidden="true"></span>Add Action</a>
                   </li>
                 </ul>
               </li>

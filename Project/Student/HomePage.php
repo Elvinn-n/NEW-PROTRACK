@@ -142,7 +142,7 @@ https://templatemo.com/tm-586-scholar
               <h4>Register Yourself</h4>
               <p>Register Yourself with your details</p>
               <div class="main-button">
-                <a href="#">Read More</a>
+                <a href="MyProfile.php">Read More</a>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ https://templatemo.com/tm-586-scholar
               <h4>Talk to your Coaches</h4>
               <p>Talk to your coaches via our feedback system.</p>
               <div class="main-button">
-                <a href="#">Read More</a>
+                <a href="DailyReport.php">Read More</a>
               </div>
             </div>
           </div>
