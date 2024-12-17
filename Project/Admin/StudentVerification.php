@@ -1,25 +1,6 @@
 <?php
 include("../Assets/Connection/Connection.php");
-
-if(isset($_GET["acid"]))
-{
-	$upQry="update tbl_student set student_status='1' where student_id='".$_GET["acid"]."'";
-	if($con->query($upQry))
-	{
-		echo "Accepted";
-		header("location:StudentVerification.php");
-	}
-}
-
-if(isset($_GET["rejid"]))
-{
-	$upQry="update tbl_student set student_status='2' where student_id='".$_GET["rejid"]."'";
-	if($con->query($upQry))
-	{
-		echo "Rejected";
-		header("location:StudentVerification.php");
-	}
-}
+include("Head.php");
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -30,7 +11,34 @@ if(isset($_GET["rejid"]))
 </head>
 
 <body>
+
 <a href="HomePage.php">Home</a>
+
+<br><br>
+<?php
+if(isset($_GET["acid"]))
+{
+	$upQry="update tbl_student set student_status='1' where student_id='".$_GET["acid"]."'";
+	if($con->query($upQry))
+	{
+		echo "Accepted";
+		
+	}
+}
+
+if(isset($_GET["rejid"]))
+{
+	$upQry="update tbl_student set student_status='2' where student_id='".$_GET["rejid"]."'";
+	if($con->query($upQry))
+	{
+		echo "Rejected";
+		
+	}
+}
+
+?>
+
+<br><br>
 <h3>NewStudent</h3>
   <table width="200" border="1">
     <tr>
@@ -158,3 +166,6 @@ if(isset($_GET["rejid"]))
   
 </body>
 </html>
+<?php
+  include("Foot.php");
+    ?>
