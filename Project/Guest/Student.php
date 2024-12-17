@@ -8,6 +8,9 @@ include("../Assets/Connection/Connection.php");
 		$password=$_POST["password"];
 		$course=$_POST["selcourse"];
 		$year=$_POST["selyear"];
+    $weight=$_POST["weight"];
+    $height=$_POST["height"];
+    $dob=$_POST["date"];
 		
 		$photo=$_FILES["photo"]["name"];
 		$temp=$_FILES["photo"]["tmp_name"];
@@ -20,7 +23,7 @@ include("../Assets/Connection/Connection.php");
 		move_uploaded_file($temp,"../Assets/files/student/".$proof);
 		
 		
-		$insQry="insert into tbl_student(student_name,student_email,student_password,course_id,acyear_id,student_photo,student_proof) values('".$name."','".$email."','".$password."','".$course."','".$year."','".$photo."','".$proof."')";
+		$insQry="insert into tbl_student(student_name,student_email,student_password,student_dob,student_height,student_weight,course_id,acyear_id,student_photo,student_proof) values('".$name."','".$email."','".$password."','".$dob."','".$height."','".$weight."','".$course."','".$year."','".$photo."','".$proof."')";
 		if($con->query($insQry)){
 			echo "Inserted";
 		}
@@ -148,6 +151,21 @@ td[colspan="2"] {
       <td>Password</td>
       <td><label for="password"></label>
       <input type="text" name="password" id="password" /></td>
+    </tr>
+    <tr>
+      <td width="136">Height</td>
+      <td width="136"><label for="date"></label>
+        <input type="date" name="date" id="date" /> cm
+    </tr>
+    <tr>
+      <td width="136">Height</td>
+      <td width="136"><label for="height"></label>
+        <input type="text" name="height" id="height" /> cm
+    </tr>
+    <tr>
+      <td width="136">Weight</td>
+      <td width="136"><label for="weight"></label>
+        <input type="text" name="Weight" id="Weight" /> kg
     </tr>
     <tr>
       <td>Course</td>

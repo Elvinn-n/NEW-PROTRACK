@@ -1,0 +1,112 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff6b6b, #51adcf);
+  }
+  
+  .player-card {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1000px;
+    background: #252525;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .player-info {
+    width: 50%;
+    background: linear-gradient(135deg, #c31432, #240b36);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .player-info img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .player-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .player-info .details {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  
+  .player-info .details p {
+    margin-bottom: 8px;
+  }
+  
+  .player-info .details span {
+    font-weight: bold;
+  }
+  
+  .player-stats {
+    width: 50%;
+    padding: 40px;
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  }
+  
+  .stat-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .stat-value {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  .chart {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .bar-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
+  
+  .bar {
+    width: 20px;
+    background: #fff;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .bar-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #ddd;
+    font-size: 0.8em;
+  }
+  
