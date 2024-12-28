@@ -153,7 +153,7 @@ td[colspan="2"] {
       <input type="text" name="password" id="password" /></td>
     </tr>
     <tr>
-      <td width="136">Height</td>
+      <td width="136">dob</td>
       <td width="136"><label for="date"></label>
         <input type="date" name="date" id="date" /> cm
     </tr>

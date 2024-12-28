@@ -62,7 +62,7 @@ https://templatemo.com/tm-586-scholar
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="#features">Features</a></li>
                       <li class="scroll-to-section"><a href="#contact">Contact</a></li>
-                      <li class="scroll-to-section"><a href="Guest/Login.php">Sign Up / Log In</a></li>
+                      <li class="scroll-to-section"><a href="MyProfile.php">My profile</a></li>
                   </ul>   
                     <a class='menu-trigger'>  
                         <span>Menu</span>
