@@ -152,7 +152,7 @@ https://templatemo.com/tm-586-scholar
             <div class="icon">
               <img src="Assets/Templates/Main/assets/images/service-02.png" alt="short courses">
             </div>
-            <div class="main-content">4
+            <div class="main-content">
               <h4>Talk to your Coaches</h4>
               <p>Talk to your coaches via our feedback system.</p>
               <div class="main-button">
@@ -606,7 +606,7 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div> -->
 
-  <div class="contact-us section" id="contact">
+  <!-- <div class="contact-us section" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-6  align-self-center">
@@ -620,7 +620,7 @@ https://templatemo.com/tm-586-scholar
               <h4>Special Offer <em>50%</em> OFF!</h4>
               <a href="#"><i class="fa fa-angle-right"></i></a>
             </div> -->
-          </div>
+          <!-- </div>
         </div>
         <div class="col-lg-6">
           <div class="contact-us-content">
@@ -652,7 +652,7 @@ https://templatemo.com/tm-586-scholar
         </div>
       </div>
     </div>
-  </div>
+  </div> --> 
 
   <footer>
     <div class="container">

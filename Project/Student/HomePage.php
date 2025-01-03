@@ -113,7 +113,7 @@ https://templatemo.com/tm-586-scholar
               <div class="header-text">
                 <span class="category">ProTrack</span>
                 <h2>Online Learning helps you save the time</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.</p>
+                <p></p>
                 <div class="buttons">
                   <div class="main-button">
                     <a href="#">Log In</a>
@@ -139,10 +139,10 @@ https://templatemo.com/tm-586-scholar
               <img src="../Assets/Templates/Main/assets/images/service-01.png" alt="online degrees">
             </div>
             <div class="main-content">
-              <h4>Register Yourself</h4>
-              <p>Register Yourself with your details</p>
+              <h4>View your Profile</h4>
+              <p>See your profile</p>
               <div class="main-button">
-                <a href="MyProfile.php">Read More</a>
+                <a href="MyProfile.php">Your Profile</a>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ https://templatemo.com/tm-586-scholar
               <h4>Talk to your Coaches</h4>
               <p>Talk to your coaches via our feedback system.</p>
               <div class="main-button">
-                <a href="DailyReport.php">Read More</a>
+                <a href="DailyReport.php">Daily Report</a>
               </div>
             </div>
           </div>

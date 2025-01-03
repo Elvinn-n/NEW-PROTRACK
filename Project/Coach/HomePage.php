@@ -71,7 +71,6 @@ https://templatemo.com/tm-586-scholar
                     <ul class="nav">
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="#services">Features</a></li>
-                      <li class="scroll-to-section"><a href="#contact">Complaint</a></li>
                       <li class="scroll-to-section"><a href="MyProfile.php">Profile</a></li>
                   </ul>   
                     <a class='menu-trigger'>  
@@ -167,7 +166,7 @@ https://templatemo.com/tm-586-scholar
               <p>Review the daily report sent by the students.
               </p>
               <div class="main-button">
-                <a href="DailyReport.php">Daily Report</a>
+                <a href="Students.php">Daily Report</a>
               </div>
             </div>
           </div>
@@ -659,7 +658,7 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div> -->
 
-  <div class="contact-us section" id="contact">
+  <!-- <div class="contact-us section" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-6  align-self-center">
@@ -673,7 +672,7 @@ https://templatemo.com/tm-586-scholar
               <h4>Special Offer <em>50%</em> OFF!</h4>
               <a href="#"><i class="fa fa-angle-right"></i></a>
             </div> -->
-          </div>
+          <!-- </div>
         </div>
         <div class="col-lg-6">
           <div class="contact-us-content">
@@ -705,7 +704,7 @@ https://templatemo.com/tm-586-scholar
         </div>
       </div>
     </div>
-  </div>
+  </div> --> 
 
   <footer>
     <div class="container">
