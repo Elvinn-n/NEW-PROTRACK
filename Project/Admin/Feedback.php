@@ -1,4 +1,8 @@
 <?php
+include("Head.php");
+?>
+
+<?php
     include("../Assets/connection/connection.php");
 
     ?>
@@ -26,3 +30,6 @@
 
         ?>
     </table>
+    <?php
+include("Foot.php");
+?>

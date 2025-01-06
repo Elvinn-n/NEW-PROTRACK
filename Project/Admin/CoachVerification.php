@@ -1,6 +1,9 @@
 <?php
-include("../Assets/Connection/Connection.php");
 include("Head.php");
+?>
+<?php
+include("../Assets/Connection/Connection.php");
+
 if(isset($_GET["acid"]))
 {
 	$upQry="update tbl_coach set coach_status='1' where coach_id='".$_GET["acid"]."'";

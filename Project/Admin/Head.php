@@ -53,7 +53,7 @@
               <li>
                 <a class="active" href="HomePage.php"
                   ><span class="icon home" aria-hidden="true"></span
-                  >Dashboard</a
+                  >Home</a
                 >
               </li>
               <li>
@@ -73,9 +73,45 @@
                   </li>
                 </ul>
               </li>
+
               <li>
                 <a class="show-cat-btn" href="##">
-                  <span class="icon paper" aria-hidden="true"></span>Game
+                  <span class="icon paper" aria-hidden="true"></span>View Complaint 
+                  <span class="category__btn transparent-btn" title="Open list">
+                    <span class="sr-only">Open list</span>
+                    <span class="icon arrow-down" aria-hidden="true"></span>
+                  </span>
+                </a>
+                <ul class="cat-sub-menu">
+                  <li>
+                    <a href="Complaint.php">Complaints </a>
+                  </li>
+                </ul>
+              </li>
+
+              
+                
+            
+
+              <li>
+                <a class="show-cat-btn" href="##">
+                  <span class="icon paper" aria-hidden="true"></span>View Feedback
+                  <span class="category__btn transparent-btn" title="Open list">
+                    <span class="sr-only">Open list</span>
+                    <span class="icon arrow-down" aria-hidden="true"></span>
+                  </span>
+                </a>
+                <ul class="cat-sub-menu">
+                  <li>
+                    <a href="Feedback.php">Feedbacks </a>
+                  </li>
+                </ul>
+              </li>
+              
+
+              <li>
+                <a class="show-cat-btn" href="##">
+                  <span class="icon paper" aria-hidden="true"></span>Add New Data
                   <span class="category__btn transparent-btn" title="Open list">
                     <span class="sr-only">Open list</span>
                     <span class="icon arrow-down" aria-hidden="true"></span>
@@ -91,10 +127,17 @@
                   <li>
                     <a href="Action.php"><span class="icon edit" aria-hidden="true"></span>Add Action</a>
                   </li>
+                  <li>
+                    <a href="AcademicYear.php"><span class="icon edit" aria-hidden="true"></span>Add Academic Year</a>
+                  </li>
                 </ul>
               </li>
               <li>
-                
+              <li>
+    <a href="../index.php">
+        <span class="icon paper" aria-hidden="true"></span>Sign out
+    </a>
+</li>
 
 
               </li>
@@ -115,21 +158,21 @@
                 title="Menu"
                 type="button"
               >
-                <span class="sr-only">Toggle menu</span>
+                <!-- <span class="sr-only">Toggle menu</span>
                 <span class="icon menu-toggle--gray" aria-hidden="true"></span>
               </button>
               
               <button
                 class="theme-switcher gray-circle-btn"
                 type="button"
-                title="Switch theme"
+                title="Switch theme" -->
               >
-                <span class="sr-only">Switch theme</span>
+                <!-- <span class="sr-only">Switch theme</span>
                 <i class="sun-icon" data-feather="sun" aria-hidden="true"></i>
                 <i class="moon-icon" data-feather="moon" aria-hidden="true"></i>
-              </button>
+              </button> -->
               
-              <div class="nav-user-wrapper">
+              <!-- <div class="nav-user-wrapper">
                 <button
                   href=""
                   class="nav-user-btn dropdown-btn"
@@ -164,7 +207,7 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
         </nav>

@@ -1,4 +1,3 @@
-
 <?php
 include("../Assets/connection/connection.php");
 
@@ -62,7 +61,7 @@ if(isset($_POST["submit"])) {
         }
 
         input[type="submit"] {
-            background-color: #4CAF50;
+            background-color: #60baaf;
             color: white;
             padding: 10px 15px;
             border: none;
@@ -72,7 +71,7 @@ if(isset($_POST["submit"])) {
         }
 
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #50a79a;
         }
 
         .error {
@@ -100,7 +99,7 @@ if(isset($_POST["submit"])) {
         <table align="center">
             <tr>
                 <td>Content</td>
-                <td><textarea name="content" id="content" placeholder="Enter feedback"></textarea></td>
+                <td><textarea name="content" id="content" placeholder="Enter Anonymous feedback"></textarea></td>
             </tr>
             <tr>
                 <td colspan="2" align="center">

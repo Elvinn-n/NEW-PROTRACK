@@ -1,4 +1,8 @@
 <?php
+include("Head.php");
+?>
+
+<?php
 include("../Assets/connection/connection.php");
 	if(isset($_POST["submit"]))
 	{
@@ -82,4 +86,6 @@ if(isset($_GET["delID"]))
     </tr>
     <?php }?>
   </table>
-  
+  <?php
+include("Foot.php");
+?>

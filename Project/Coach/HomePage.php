@@ -212,10 +212,10 @@ https://templatemo.com/tm-586-scholar
               <img src="../Assets/Templates/Main/assets/images/service-02.png" alt="short courses">
             </div>
             <div class="main-content">
-              <h4>Complaints sent by students</h4>
+              <h4>Complaint</h4>
               <p></p>
               <div class="main-button">
-                <a href="Complaint.php">Complaint</a>
+                <a href="Complaint.php">Send Complaints to Admin</a>
               </div>
             </div>
           </div>

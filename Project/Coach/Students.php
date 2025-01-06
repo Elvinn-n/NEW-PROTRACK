@@ -14,6 +14,7 @@ include("../Assets/connection/connection.php");
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         
         .container {
@@ -21,7 +22,7 @@ include("../Assets/connection/connection.php");
             margin: 20px auto;
             overflow: hidden;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
@@ -50,7 +51,8 @@ include("../Assets/connection/connection.php");
         }
 
         th {
-            background-color: #f4f4f4;
+            background-color: #60baaf;
+            color: #ffffff;
             font-weight: bold;
         }
 
@@ -60,6 +62,15 @@ include("../Assets/connection/connection.php");
 
         tr:hover {
             background-color: #f5f5f5;
+        }
+
+        a {
+            text-decoration: none;
+            color: #60baaf;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -77,9 +88,8 @@ include("../Assets/connection/connection.php");
                 $result = $con->query($sql);
                 $i=1;
                 while($row = $result->fetch_assoc()) {
-                    echo "<tr> <td>" . $i++ . "</td> <td><a href='StudentProfile.php?sid=" . $row['student_id'] . "'>" . $row['student_name'] . "</td> </tr>";
+                    echo "<tr> <td>" . $i++ . "</td> <td><a href='StudentProfile.php?sid=" . $row['student_id'] . "'>" . $row['student_name'] . "</a></td> </tr>";
                 }
-                
                 ?>
             </table>
         </form>

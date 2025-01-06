@@ -34,17 +34,27 @@
         }
 
         th {
+            background-color: #60baaf;
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
             background-color: #f2f2f2;
         }
 
-        td a {
-            color: #008CBA;
+        .button {
+            background-color: #60baaf;
+            color: #ffffff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
             text-decoration: none;
             font-weight: bold;
         }
 
-        td a:hover {
-            text-decoration: underline;
+        .button:hover {
+            background-color: #50a79a;
         }
     </style>
 </head>
@@ -75,8 +85,8 @@
                 <td><?php echo $row["game_starttime"]; ?></td>
                 <td><?php echo $row["game_endtime"]; ?></td>
                 <td>
-                    <a href="AssignPosition.php?gid=<?php echo $row["game_id"]?>">assign</a> /
-                    <a href="LiveReport.php?gid=<?php echo $row["game_id"]?>">Live Report</a>
+                    <a href="AssignPosition.php?gid=<?php echo $row["game_id"]?>" class="button">Assign Position</a>
+                    <a href="LiveReport.php?gid=<?php echo $row["game_id"]?>" class="button">Live Report</a>
                 </td>
             </tr>
             <?php

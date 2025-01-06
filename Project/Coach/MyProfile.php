@@ -1,90 +1,122 @@
 <?php
-	session_start();
-	include("../Assets/Connection/Connection.php");
-	$selQuery="select * from tbl_coach where coach_id='".$_SESSION['cid']."'";
-	$result=$con->query($selQuery);
-	$data=$result->fetch_assoc();
-	
+    session_start();
+    include("../Assets/Connection/Connection.php");
+    $selQuery="select * from tbl_coach where coach_id='".$_SESSION['cid']."'";
+    $result=$con->query($selQuery);
+    $data=$result->fetch_assoc();
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>My Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-body {
-    background-color: #60bab0; 
-    font-family: Arial, sans-serif; 
-}
+    body {
+        background-color: #60bab0;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-table {
-    border-collapse: collapse;
-    width: 414px;
-    margin: 20px auto; /* Center the table */
-    background-color: #ffffff; 
-    border-radius: 5px;
-    overflow: hidden;
-}
+    .form-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        width: 400px;
+    }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
+    h1 {
+        text-align: center;
+        color: #333333;
+        margin-bottom: 30px;
+    }
 
-th {
-    background-color: #f2f2f2; 
-}
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
 
-img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
 
-a {
-    text-decoration: none;
-    color: #60bab0; 
-}
+    th {
+        width: 30%;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ddd;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    td {
+        width: 70%;
+        border-bottom: 1px solid #ddd;
+    }
 
-h1 {
-    text-align: center;
-    color: #ffffff; /* Heading color */
-    margin-bottom: 20px; 
-}
+    img {
+        border-radius: 50%;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        background-color: #60baaf;
+        color: #ffffff;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .button:hover {
+        background-color: #50a79a;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-around;
+    }
 </style>
 </head>
 
 <body>
 
-<div align="center">
+<div class="form-container">
   <h1>Profile</h1>
 
-  <table width="414" height="306" border="1">
+  <table>
     <tr>
-      <td height="156" colspan="2" align="center">
+      <td colspan="2" align="center">
         <img src='../Assets/files/Coach/<?php echo $data['coach_photo'] ?>' width="100px" height="100px"/>
       </td>
     </tr>
-
     <tr>
-      <td height="51">Name</td>
-      <td width="215"><?php echo $data['coach_name'] ?></td>
+      <th>Name</th>
+      <td><?php echo $data['coach_name'] ?></td>
     </tr>
     <tr>
-      <td height="52">Email</td>
+      <th>Email</th>
       <td><?php echo $data['coach_email'] ?></td>
     </tr>
     <tr>
-      <td height="35"><a href="EditProfile.php">Edit Profile</a></td>
-      <td height="35"><a href="ChangePassword.php">Change Password</a></td>
+      <td colspan="2" class="button-container">
+        <a href="EditProfile.php" class="button">Edit Profile</a>
+        <a href="ChangePassword.php" class="button">Change Password</a>
+      </td>
     </tr>
   </table>
 </div>
 
 </body>
-
 </html>

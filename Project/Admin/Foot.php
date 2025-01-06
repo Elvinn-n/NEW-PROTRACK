@@ -6,20 +6,16 @@
           <div class="container footer--flex">
             <div class="footer-start">
               <p>
-                2021 © Elegant Dashboard -
+                ProTrack
                 <a
                   href="elegant-dashboard.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >elegant-dashboard.com</a
+                  ></a
                 >
               </p>
             </div>
-            <ul class="footer-end">
-              <li><a href="##">About</a></li>
-              <li><a href="##">Support</a></li>
-              <li><a href="##">Puchase</a></li>
-            </ul>
+            
           </div>
         </footer>
       </div>
